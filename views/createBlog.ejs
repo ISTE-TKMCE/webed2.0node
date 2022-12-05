@@ -1,32 +1,32 @@
 <%- include('./partials/navbar.ejs') %>
     <div class="grid min-h-screen place-items-center bg-[#FFFFFF]">
-        <form class="border rounded-md shadow-xl bg-[#ef5ef5] p-20" action="/register" method="POST">
-            <div class="flex items-center justify-center text-black font-bold uppercase">register</div>
+        <form class="border rounded-md shadow-xl bg-[#ef5ef5] p-20" action="/blog" method="POST">
+            <div class="flex items-center justify-center text-black font-bold uppercase">Write Blog</div>
             <div class="form-control">
                 <label class="label">
-                    <span class="label-text text-black">Your Username</span>
+                    <span class="label-text text-black">Date</span>
                 </label>
                 <label class="input-group">
-                    <span>Username</span>
-                    <input type="text" placeholder="Username" class="input input-bordered" name="name" />
+                    <span>Date</span>
+                    <input type="text" placeholder="Date" class="input input-bordered" name="date" />
                 </label>
             </div>
             <div class="form-control">
                 <label class="label">
-                    <span class="label-text text-black">Your Email</span>
+                    <span class="label-text text-black">Name of the blog</span>
                 </label>
                 <label class="input-group">
-                    <span>Email</span>
-                    <input type="text" placeholder="info@site.com" class="input input-bordered" name="email" />
+                    <span>Name</span>
+                    <input type="text" placeholder="name" class="input input-bordered" name="name" />
                 </label>
             </div>
             <div class="form-control">
                 <label class="label">
-                    <span class="label-text text-black">Password</span>
+                    <span class="label-text text-black">Content</span>
                 </label>
                 <label class="input-group">
-                    <span>Password</span>
-                    <input type="text" placeholder="*******" class="input input-bordered" name="password" />
+                    <span>Content</span>
+                    <input type="textarea" class="input input-bordered" name="content" />
                 </label>
             </div>
             <div class="grid place-items-center mt-10">

@@ -7,11 +7,14 @@
            <div class="grid gap-5 place-items-center text-black rounded-md bg-[#ef5ef5]">
             <% for(let i=0; i< blogs.length; i++) { %>
             <div class="card grid place-items-center">
+                <div class="date">
+                    <%= blogs[i].date %>
+                </div>
                 <div class="name">
                     <%= blogs[i].name %>
                 </div>
                 <div class="description">
-                    <%= blogs[i].body %>
+                    <%= blogs[i].content %>
                 </div>
             </div>
             <% } %>

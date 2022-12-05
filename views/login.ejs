@@ -1,14 +1,14 @@
 <%- include('./partials/navbar.ejs') %>
     <div class="grid min-h-screen place-items-center bg-[#FFFFFF]">
-        <form class="border rounded-md shadow-xl bg-[#ef5ef5] p-20">
+        <form class="border rounded-md shadow-xl bg-[#ef5ef5] p-20" method="POST" action="/login">
             <div class="flex items-center justify-center text-black font-bold uppercase">login</div>
             <div class="form-control">
                 <label class="label">
-                    <span class="label-text text-black">Your Email</span>
+                    <span class="label-text text-black">User</span>
                 </label>
                 <label class="input-group">
-                    <span>Email</span>
-                    <input type="text" placeholder="info@site.com" class="input input-bordered" name="email" />
+                    <span>User</span>
+                    <input type="text" placeholder="user" class="input input-bordered" name="user" />
                 </label>
             </div>
             <div class="form-control">
@@ -21,7 +21,7 @@
                 </label>
             </div>
             <div class="grid place-items-center mt-10">
-                <button class="btn btn-success">Log in</button>
+                <button class="btn btn-success" type="submit">Log in</button>
             </div>
         </form>
     </div>
